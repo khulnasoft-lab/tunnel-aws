@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/aquasecurity/go-mock-aws v0.0.0-20230810212901-d6feebd39060
-	github.com/aquasecurity/trivy-iac v0.5.2
+	github.com/aquasecurity/trivy-iac v0.7.0
 	github.com/aws/aws-sdk-go v1.47.12
 	github.com/aws/aws-sdk-go-v2 v1.24.0
 	github.com/aws/aws-sdk-go-v2/config v1.25.1
@@ -61,8 +61,8 @@ require (
 	github.com/alecthomas/chroma v0.10.0 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
-	github.com/aquasecurity/defsec v0.93.2-0.20231024055158-015ab97ce898 // indirect
-	github.com/aquasecurity/trivy-policies v0.3.1-0.20231021040354-0572a07131c2 // indirect
+	github.com/aquasecurity/defsec v0.93.2-0.20231120220217-6818261529c8 // indirect
+	github.com/aquasecurity/trivy-policies v0.6.1-0.20231120231532-f6f2330bf842 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.5.1 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.4 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.2.9 // indirect
@@ -83,7 +83,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/docker/distribution v2.8.2+incompatible // indirect
-	github.com/docker/docker v24.0.6+incompatible // indirect
+	github.com/docker/docker v24.0.7+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
@@ -110,7 +110,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/open-policy-agent/opa v0.57.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
-	github.com/opencontainers/image-spec v1.1.0-rc4 // indirect
+	github.com/opencontainers/image-spec v1.1.0-rc5 // indirect
 	github.com/owenrumney/squealer v1.2.1 // indirect
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
