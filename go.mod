@@ -6,7 +6,7 @@ require (
 	github.com/aquasecurity/go-mock-aws v0.0.0-20230810212901-d6feebd39060
 	github.com/aquasecurity/trivy-iac v0.7.1
 	github.com/aws/aws-sdk-go v1.47.12
-	github.com/aws/aws-sdk-go-v2 v1.24.0
+	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.25.1
 	github.com/aws/aws-sdk-go-v2/credentials v1.16.1
 	github.com/aws/aws-sdk-go-v2/service/accessanalyzer v1.26.5
@@ -30,7 +30,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/elasticsearchservice v1.23.2
 	github.com/aws/aws-sdk-go-v2/service/emr v1.35.6
 	github.com/aws/aws-sdk-go-v2/service/iam v1.27.2
-	github.com/aws/aws-sdk-go-v2/service/kafka v1.26.2
+	github.com/aws/aws-sdk-go-v2/service/kafka v1.28.6
 	github.com/aws/aws-sdk-go-v2/service/kinesis v1.22.2
 	github.com/aws/aws-sdk-go-v2/service/kms v1.26.2
 	github.com/aws/aws-sdk-go-v2/service/lambda v1.47.0
@@ -65,8 +65,8 @@ require (
 	github.com/aquasecurity/trivy-policies v0.6.1-0.20231120231532-f6f2330bf842 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.5.1 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.4 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.2.9 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.5.9 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.2.10 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.5.10 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.7.0 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/v4a v1.2.3 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.10.1 // indirect
