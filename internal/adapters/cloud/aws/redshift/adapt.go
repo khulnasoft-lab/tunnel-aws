@@ -10,9 +10,9 @@ import (
 	api "github.com/aws/aws-sdk-go-v2/service/redshift"
 	redshiftTypes "github.com/aws/aws-sdk-go-v2/service/redshift/types"
 
-	"github.com/khulnasoft-lab/tunnel-was/internal/adapters/cloud/aws"
-	"github.com/khulnasoft-lab/tunnel-was/pkg/concurrency"
-	"github.com/khulnasoft-lab/tunnel-was/pkg/types"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/types"
 )
 
 type adapter struct {

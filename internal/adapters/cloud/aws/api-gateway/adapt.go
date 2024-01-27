@@ -1,10 +1,10 @@
 package api_gateway
 
 import (
+	"github.com/aquasecurity/defsec/pkg/state"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
 	apiv1 "github.com/aws/aws-sdk-go-v2/service/apigateway"
 	apiv2 "github.com/aws/aws-sdk-go-v2/service/apigatewayv2"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/state"
 )
 
 type adapter struct {

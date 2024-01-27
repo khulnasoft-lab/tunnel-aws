@@ -1,14 +1,16 @@
 package msk
 
 import (
+	"github.com/aquasecurity/defsec/pkg/state"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
+
+	awssdk "github.com/aws/aws-sdk-go-v2/aws"
 	api "github.com/aws/aws-sdk-go-v2/service/kafka"
 	"github.com/aws/aws-sdk-go-v2/service/kafka/types"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/msk"
-	"github.com/khulnasoft/defsec/pkg/state"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/defsec/pkg/providers/aws/msk"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 type adapter struct {
@@ -86,13 +88,13 @@ func (a *adapter) adaptCluster(apiCluster types.ClusterInfo) (*msk.Cluster, erro
 	if apiCluster.LoggingInfo != nil && apiCluster.LoggingInfo.BrokerLogs != nil {
 		logs := apiCluster.LoggingInfo.BrokerLogs
 		if logs.S3 != nil {
-			logS3 = logs.S3.Enabled
+			logS3 = awssdk.ToBool(logs.S3.Enabled)
 		}
 		if logs.CloudWatchLogs != nil {
-			logCW = logs.CloudWatchLogs.Enabled
+			logCW = awssdk.ToBool(logs.CloudWatchLogs.Enabled)
 		}
 		if logs.Firehose != nil {
-			logFH = logs.Firehose.Enabled
+			logFH = awssdk.ToBool(logs.Firehose.Enabled)
 		}
 	}
 

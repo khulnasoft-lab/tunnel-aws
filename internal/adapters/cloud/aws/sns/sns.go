@@ -1,14 +1,14 @@
 package sns
 
 import (
+	"github.com/aquasecurity/defsec/pkg/providers/aws/sns"
+	"github.com/aquasecurity/defsec/pkg/state"
+	"github.com/aquasecurity/defsec/pkg/types"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
 	snsapi "github.com/aws/aws-sdk-go-v2/service/sns"
 	snsTypes "github.com/aws/aws-sdk-go-v2/service/sns/types"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/sns"
-	"github.com/khulnasoft/defsec/pkg/state"
-	"github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 type adapter struct {

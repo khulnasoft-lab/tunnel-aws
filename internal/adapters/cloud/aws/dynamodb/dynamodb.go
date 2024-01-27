@@ -1,15 +1,15 @@
 package dynamodb
 
 import (
+	"github.com/aquasecurity/defsec/pkg/providers/aws/dynamodb"
+	"github.com/aquasecurity/defsec/pkg/state"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
+	aws2 "github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	dynamodbApi "github.com/aws/aws-sdk-go-v2/service/dynamodb"
 	dynamodbTypes "github.com/aws/aws-sdk-go-v2/service/dynamodb/types"
-	aws2 "github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/dynamodb"
-	"github.com/khulnasoft/defsec/pkg/state"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 type adapter struct {

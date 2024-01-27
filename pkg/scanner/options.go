@@ -1,10 +1,10 @@
 package scanner
 
 import (
-	"github.com/khulnasoft/defsec/pkg/scanners/options"
+	"github.com/aquasecurity/defsec/pkg/scanners/options"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/progress"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/progress"
 )
 
 type ConfigurableAWSScanner interface {

@@ -3,9 +3,9 @@ package concurrency
 import (
 	"sync"
 
-	"github.com/khulnasoft/defsec/pkg/state"
+	"github.com/aquasecurity/defsec/pkg/state"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/progress"
+	"github.com/aquasecurity/trivy-aws/pkg/progress"
 )
 
 type Context interface {

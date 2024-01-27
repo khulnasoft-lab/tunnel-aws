@@ -1,10 +1,10 @@
 package options
 
 import (
-	"github.com/khulnasoft/defsec/pkg/debug"
+	"github.com/aquasecurity/defsec/pkg/debug"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/progress"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/progress"
 )
 
 type Options struct {

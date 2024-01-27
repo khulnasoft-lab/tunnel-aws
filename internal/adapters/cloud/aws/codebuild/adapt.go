@@ -1,13 +1,13 @@
 package codebuild
 
 import (
+	"github.com/aquasecurity/defsec/pkg/providers/aws/codebuild"
+	"github.com/aquasecurity/defsec/pkg/state"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
 	api "github.com/aws/aws-sdk-go-v2/service/codebuild"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/codebuild"
-	"github.com/khulnasoft/defsec/pkg/state"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 type adapter struct {

@@ -1,9 +1,9 @@
 package ecs
 
 import (
+	"github.com/aquasecurity/defsec/pkg/state"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
 	ecsapi "github.com/aws/aws-sdk-go-v2/service/ecs"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft/defsec/pkg/state"
 )
 
 type adapter struct {

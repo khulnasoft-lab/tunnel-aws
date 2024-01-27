@@ -4,20 +4,20 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/errs"
-	"github.com/khulnasoft/defsec/pkg/types"
+	"github.com/aquasecurity/defsec/pkg/types"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/errs"
 
-	"github.com/khulnasoft/defsec/pkg/debug"
+	"github.com/aquasecurity/defsec/pkg/debug"
 
 	"github.com/aws/aws-sdk-go-v2/service/sts"
 
+	"github.com/aquasecurity/defsec/pkg/state"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/options"
+	"github.com/aquasecurity/trivy-aws/pkg/progress"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/arn"
 	"github.com/aws/aws-sdk-go-v2/config"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/options"
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/progress"
-	"github.com/khulnasoft/defsec/pkg/state"
 )
 
 var registeredAdapters []ServiceAdapter

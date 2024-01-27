@@ -3,12 +3,12 @@ package api_gateway
 import (
 	"fmt"
 
+	v1 "github.com/aquasecurity/defsec/pkg/providers/aws/apigateway/v1"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
 	api "github.com/aws/aws-sdk-go-v2/service/apigateway"
 	agTypes "github.com/aws/aws-sdk-go-v2/service/apigateway/types"
-	v1 "github.com/khulnasoft/defsec/pkg/providers/aws/apigateway/v1"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 func (a *adapter) getAPIsV1() ([]v1.API, error) {

@@ -1,13 +1,13 @@
 package ec2
 
 import (
+	"github.com/aquasecurity/defsec/pkg/providers/aws/ec2"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	ec2api "github.com/aws/aws-sdk-go-v2/service/ec2"
 	"github.com/aws/aws-sdk-go-v2/service/ec2/types"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/ec2"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
 
-	"github.com/khulnasoft-lab/tunnel-aws/pkg/concurrency"
+	"github.com/aquasecurity/trivy-aws/pkg/concurrency"
 )
 
 func (a *adapter) getSecurityGroups() (securityGroups []ec2.SecurityGroup, err error) {

@@ -3,9 +3,9 @@ package cloud
 import (
 	"context"
 
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/aws"
-	"github.com/khulnasoft-lab/tunnel-aws/internal/adapters/cloud/options"
-	"github.com/khulnasoft/defsec/pkg/state"
+	"github.com/aquasecurity/defsec/pkg/state"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/aws"
+	"github.com/aquasecurity/trivy-aws/internal/adapters/cloud/options"
 )
 
 // Adapt ...

@@ -5,18 +5,18 @@ import (
 	"io/fs"
 	"testing"
 
-	"github.com/khulnasoft/defsec/pkg/providers/aws/iam"
-	"github.com/khulnasoft/defsec/pkg/providers/azure"
-	"github.com/khulnasoft/defsec/pkg/providers/azure/authorization"
+	"github.com/aquasecurity/defsec/pkg/providers/aws/iam"
+	"github.com/aquasecurity/defsec/pkg/providers/azure"
+	"github.com/aquasecurity/defsec/pkg/providers/azure/authorization"
 
-	"github.com/aquasecurity/trivy-iac/pkg/types"
-	"github.com/khulnasoft/defsec/pkg/framework"
-	"github.com/khulnasoft/defsec/pkg/providers/aws"
-	"github.com/khulnasoft/defsec/pkg/providers/aws/rds"
-	"github.com/khulnasoft/defsec/pkg/scanners/options"
-	"github.com/khulnasoft/defsec/pkg/state"
-	defsecTypes "github.com/khulnasoft/defsec/pkg/types"
-	"github.com/khulnasoft/defsec/test/testutil"
+	"github.com/aquasecurity/defsec/pkg/framework"
+	"github.com/aquasecurity/defsec/pkg/providers/aws"
+	"github.com/aquasecurity/defsec/pkg/providers/aws/rds"
+	"github.com/aquasecurity/defsec/pkg/scanners/options"
+	"github.com/aquasecurity/defsec/pkg/state"
+	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
+	defsecRules "github.com/aquasecurity/defsec/pkg/types/rules"
+	"github.com/aquasecurity/defsec/test/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -67,7 +67,7 @@ func TestScanner_GetRegisteredRules(t *testing.T) {
 	}
 }
 
-func assertRules(t *testing.T, r types.RegisteredRule, tc testStruct) {
+func assertRules(t *testing.T, r defsecRules.RegisteredRule, tc testStruct) {
 	t.Helper()
 
 	if _, ok := r.Rule.Frameworks[tc.fwApplied]; !ok {
